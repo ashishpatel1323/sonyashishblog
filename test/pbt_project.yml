@@ -1,6 +1,6 @@
 name: 20_ap1
 description: ''
-version: 0.0.1-SNAPSHOT
+version: '2.0'
 author: sony@prophecy.io
 language: python
 buildSystem: wheel
