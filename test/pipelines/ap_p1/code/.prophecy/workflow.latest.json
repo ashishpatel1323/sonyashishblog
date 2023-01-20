@@ -16,7 +16,14 @@
     "configuration" : {
       "common" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "ap1_v1",
+          "kind" : {
+            "type" : "string",
+            "value" : "test"
+          },
+          "optional" : false
+        } ]
       },
       "oldCommon" : {
         "type" : "record",
@@ -43,15 +50,58 @@
     },
     "topLevelPackage" : "ap_p1"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "M1FA-XbPC0y7AN9F_8IsS",
+    "source" : "-juvqYdcAQdPo1l1SYVqp$$7HcyTD2wT4oqDuvZR-2o6",
+    "sourcePort" : "RqhMFZBzqt0diLAzVUotU$$gekw0nnZ1_BUSlpCwDzD_",
+    "target" : "uEu2HyZV8rEDIU8W2v-Gt$$ATl64EkmIGNsVKyXpLEhy",
+    "targetPort" : "ptUlX5qtgw1cgCnLNKGue$$p69YuijNfB0r0PgzeXlXt"
+  } ],
   "processes" : {
+    "uEu2HyZV8rEDIU8W2v-Gt$$ATl64EkmIGNsVKyXpLEhy" : {
+      "id" : "uEu2HyZV8rEDIU8W2v-Gt$$ATl64EkmIGNsVKyXpLEhy",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 100,
+        "y" : 220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ptUlX5qtgw1cgCnLNKGue$$p69YuijNfB0r0PgzeXlXt",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "QNThlHgrFATJnTtWl-h5M$$8Ifcssg1ExZSyKA5awwRo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "_c0",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "'$ap1_v1'"
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "-juvqYdcAQdPo1l1SYVqp$$7HcyTD2wT4oqDuvZR-2o6" : {
       "id" : "-juvqYdcAQdPo1l1SYVqp$$7HcyTD2wT4oqDuvZR-2o6",
       "component" : "Source",
       "metadata" : {
         "label" : "ds1_0",
         "slug" : "ds1_0",
-        "x" : 140,
+        "x" : -220,
         "y" : 160,
         "phase" : 0,
         "cache" : false,
@@ -68,7 +118,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/&tag=20_sony1/1&projectSubscriptionProjectId=919&path=datasets/ds1"
+        "datasetId" : "gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/&tag=20_sony1/2&projectSubscriptionProjectId=919&path=datasets/ds1"
       }
     }
   },

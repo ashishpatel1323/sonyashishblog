@@ -14,7 +14,7 @@ pipelines:
     createdAt: '2023-01-20 00:43:25'
     datasets:
       inputs:
-      - gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/&tag=20_sony1/1&projectSubscriptionProjectId=919&path=datasets/ds1
+      - gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/&tag=20_sony1/2&projectSubscriptionProjectId=919&path=datasets/ds1
       outputs: []
     dependencies: {}
 datasets: {}
@@ -24,13 +24,13 @@ libraries: []
 subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies: []
 projectDependencies:
   '919':
     projectUID: 919
     projectName: 20_sony1
     repositoryPath: gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/
-    version: 20_sony1/1
+    version: 20_sony1/2
     author: null
-    createdAt: '2023-01-20 00:43:41'
+    createdAt: '2023-01-20 00:56:18'
 pipelineConfigurations: {}
