@@ -4,7 +4,19 @@ version: 0.0.1-SNAPSHOT
 author: sony@prophecy.io
 language: python
 buildSystem: wheel
-pipelines: {}
+pipelines:
+  pipelines/ap_p1:
+    name: ap_p1
+    description: ''
+    author: sony@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2023-01-20 00:43:25'
+    datasets:
+      inputs:
+      - gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/&tag=20_sony1/1&projectSubscriptionProjectId=919&path=datasets/ds1
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
@@ -13,5 +25,12 @@ subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
 dependencies: '[]'
-projectDependencies: {}
+projectDependencies:
+  '919':
+    projectUID: 919
+    projectName: 20_sony1
+    repositoryPath: gitUri=https://github.com/sonypriyadarshini/Zeus&subPath=/
+    version: 20_sony1/1
+    author: null
+    createdAt: '2023-01-20 00:43:41'
 pipelineConfigurations: {}
