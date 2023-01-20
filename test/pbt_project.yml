@@ -7,7 +7,7 @@ buildSystem: wheel
 pipelines:
   pipelines/ap_p1:
     name: ap_p1
-    description: --nbvnvnvnvb hfhfjhfj
+    description: \mn
     author: sony@prophecy.io
     mode: batch
     language: python
